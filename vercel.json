@@ -1,5 +1,16 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "experimentalServices": {
+    "frontend": {
+      "root": ".",
+      "framework": "vite",
+      "routePrefix": "/"
+    },
+    "backend": {
+      "root": "backend",
+      "runtime": "nodejs22.x",
+      "entrypoint": "server.js",
+      "routePrefix": "/_backend"
+    }
+  }
 }

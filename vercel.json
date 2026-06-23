@@ -1,14 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "experimentalServices": {
-    "frontend": {
-      "entrypoint": "index.html",
-      "routePrefix": "/"
-    },
-    "backend": {
-      "entrypoint": "backend/server.js",
-      "framework": "express",
-      "routePrefix": "/_backend"
-    }
-  }
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": "."
 }
